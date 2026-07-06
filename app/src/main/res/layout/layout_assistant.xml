@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardAssistente"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_assistant_card"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_card">
+
+        <LinearLayout
+            android:id="@+id/headerAssistente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
+
+            <FrameLayout
+                android:layout_width="@dimen/assistant_avatar_size"
+                android:layout_height="@dimen/assistant_avatar_size"
+                android:background="@drawable/bg_assistant_avatar">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/assistente_titulo"
+                    android:src="@drawable/ic_assistant"
+                    app:tint="@color/on_primary" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.04"
+                    android:text="@string/assistente_titulo"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textSaudacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/assistente_saudacao"
+                    android:textColor="@color/on_surface"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textAssistenteSubtitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/assistente_subtitulo"
+                    android:textColor="@color/on_surface_variant"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iconExpandir"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_menu_button"
+                android:contentDescription="@string/assistente_subtitulo"
+                android:padding="6dp"
+                android:src="@drawable/ic_expand"
+                app:tint="@color/primary_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAtalhos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAtalhoReceita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_chip_receita"
+                android:minHeight="@dimen/button_min_height"
+                android:text="@string/atalho_receita"
+                android:textColor="@color/on_primary"
+                android:textSize="14sp"
+                app:backgroundTint="@null"
+                app:cornerRadius="14dp"
+                app:icon="@drawable/ic_receita"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:iconSize="20dp"
+                app:iconTint="@color/on_primary"
+                app:rippleColor="#40FFFFFF" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAtalhoDespesa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_chip_despesa"
+                android:minHeight="@dimen/button_min_height"
+                android:text="@string/atalho_despesa"
+                android:textColor="@color/on_primary"
+                android:textSize="14sp"
+                app:backgroundTint="@null"
+                app:cornerRadius="14dp"
+                app:icon="@drawable/ic_despesa"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:iconSize="20dp"
+                app:iconTint="@color/on_primary"
+                app:rippleColor="#40FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/assistente_form_titulo"
+                android:textColor="@color/on_surface"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chipTipoFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_chip_receita"
+                android:paddingStart="12dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="6dp"
+                android:text="@string/label_tipo_receita"
+                android:textColor="@color/on_primary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.FluxoCaixa.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/label_valor"
+                app:placeholderText="@string/placeholder_valor"
+                app:prefixText="R$ ">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputValorAssistente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.FluxoCaixa.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/label_descricao"
+                app:placeholderText="@string/placeholder_descricao">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputDescricaoAssistente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:maxLines="2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutDataAssistente"
+                style="@style/Widget.FluxoCaixa.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/label_data"
+                app:endIconDrawable="@drawable/ic_calendar"
+                app:endIconMode="custom"
+                app:endIconTint="@color/primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputDataAssistente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSalvarAssistente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_button_primary"
+                android:minHeight="@dimen/button_min_height"
+                android:text="@string/acao_salvar"
+                android:textColor="@color/on_primary"
+                app:backgroundTint="@null"
+                app:cornerRadius="14dp"
+                app:rippleColor="#40FFFFFF" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonFecharAssistente"
+                style="@style/Widget.FluxoCaixa.Button.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="@dimen/button_min_height"
+                android:text="@string/acao_fechar" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#0D9488</color>
+    <color name="primary_dark">#0F766E</color>
+    <color name="primary_light">#14B8A6</color>
+    <color name="primary_container">#CCFBF1</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="background">#F1F5F9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_glass">#F8FAFC</color>
+    <color name="surface_variant">#E2E8F0</color>
+    <color name="on_surface">#0F172A</color>
+    <color name="on_surface_variant">#64748B</color>
+    <color name="outline">#CBD5E1</color>
+    <color name="receita">#10B981</color>
+    <color name="receita_dark">#059669</color>
+    <color name="receita_surface">#ECFDF5</color>
+    <color name="despesa">#EF4444</color>
+    <color name="despesa_dark">#DC2626</color>
+    <color name="despesa_surface">#FEF2F2</color>
+    <color name="saldo_neutro">#334155</color>
+    <color name="accent_cyan">#22D3EE</color>
+    <color name="accent_indigo">#6366F1</color>
+    <color name="gradient_start">#0F766E</color>
+    <color name="gradient_mid">#0D9488</color>
+    <color name="gradient_end">#115E59</color>
+    <color name="ic_launcher_background">#0F766E</color>
+    <color name="snackbar_success">#059669</color>
+    <color name="snackbar_error">#DC2626</color>
+</resources>

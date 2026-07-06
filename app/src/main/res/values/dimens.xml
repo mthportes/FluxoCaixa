@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_screen_horizontal">16dp</dimen>
+    <dimen name="spacing_screen_vertical">12dp</dimen>
+    <dimen name="spacing_card">16dp</dimen>
+    <dimen name="toolbar_padding_vertical">10dp</dimen>
+    <dimen name="toolbar_min_height">56dp</dimen>
+    <dimen name="assistant_avatar_size">44dp</dimen>
+    <dimen name="button_min_height">48dp</dimen>
+</resources>
